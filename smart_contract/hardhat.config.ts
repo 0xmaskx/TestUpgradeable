@@ -21,17 +21,8 @@ const config: HardhatUserConfig = {
     networks: {
       localhost: {
         url: "http://127.0.0.1:8545"
-      },
-      avalanche: {
-        url: "https://api.avax.network/ext/bc/C/rpc",
-        accounts: [process.env.AVALANCHE_PRIVATE_KEY]
       }
-    },
-  etherscan: {
-    apiKey: {
-      avalanche: process.env.ETHERSCAN_API_KEY
     }
-  }
 };
 
 export default config;
