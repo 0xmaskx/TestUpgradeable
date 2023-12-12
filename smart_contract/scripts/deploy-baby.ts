@@ -41,8 +41,8 @@ async function main() {
     const name = "YourBabyToken";
     const symbol = "BABY";
     const totalSupply = ethers.parseEther("10000000"); // Adjust the total supply as needed
-    const rewardAddress = "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd"; //Joe
-    const routerAddress = "0xEC3452f87CBa05c5a8c3529b6c961779EB77f257"; //Joe router Uniswap v2
+    const rewardAddress = "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd";
+    const routerAddress = "0xEC3452f87CBa05c5a8c3529b6c961779EB77f257";
     const marketingWalletAddress = "0xcc1C656D25456556335E1a947133A8755556F923";
     const dividendTrackerAddress =  await upgrades.erc1967.getImplementationAddress(dividendAddress);
     console.log(dividendTrackerAddress);
